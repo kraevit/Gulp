@@ -1,0 +1,29 @@
+{
+  "name": "web_starter_pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "K.Kraev",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1"
+  }
+}
