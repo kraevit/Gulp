@@ -7,7 +7,7 @@ Check node version:
 node -v 
 expected output: v10.13.0
 
-If you have older version go to https://nodejs.org/en/ and download and install the latest version ( LTS ).
+If you have older version go to https://nodejs.org/en/ download and install the latest version ( LTS ).
 
 Check gulp version:
 
