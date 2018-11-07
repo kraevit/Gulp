@@ -1,18 +1,32 @@
-How to instal package?
+How to install package?
 
-From cmd/terminal check your current node, npm and gulp versions.
+Check your current node, npm and gulp versions
+
+Check node version:
 
 node -v 
-output: v10.13.0
+expected output: v10.13.0
 
-If you have older version go to https://nodejs.org/en/ and download and install the latest version ( LTS )
+If you have older version go to https://nodejs.org/en/ and download and install the latest version ( LTS ).
+
+Check gulp version:
 
 gulp -v
 CLI version 2.0.1
 Local version 4.0.0
 
-If you have older version type the following command in cmd/terminal:
+If you have older version type the following command
 npm instal -g gulp@next
 
-Download all source files from repo: 
+Clone this repo: https://github.com/kraevit/Gulp
+
+From cmd/terminal 
+
+navigate to /BS4.1-automated-workflow 
+
+and type
+
+npm install
+
+gulp dev
 
