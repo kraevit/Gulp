@@ -33,17 +33,18 @@ function css() {
     .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass({ outputStyle: "expanded" }))
-    .pipe(sourcemaps.write())
-    .pipe(dest("./styles/"))
+
+    .pipe(dest("./styles"))
     .pipe(rename({ suffix: ".min" }))
     .pipe(postcss( [autoprefixer(), cssnano()] ))
-    .pipe(dest("./styles/"))
+    .pipe(sourcemaps.write())
+    .pipe(dest("./styles"))
     .pipe(browsersync.stream())
 }
 
 // Watch files
 function watchFiles() {
-  watch("./scss/**/*.scss", series(css, browserSyncReload));
+  watch("./scss/*.scss", css);
   watch("./*.html", browserSyncReload);
 }
 
