@@ -79,14 +79,14 @@ function css() {
         overrideBrowserlist: ["last 5 versions"],
         cascade: true
       })
-      .pipe(webpcss())
-      .pipe(dest(path.build.css))
-      .pipe(clean_css())
-      .pipe(
-        rename({
-          extname: ".min.css"
-        })
-      )
+    )
+    .pipe(webpcss())
+    .pipe(dest(path.build.css))
+    .pipe(clean_css())
+    .pipe(
+      rename({
+        extname: ".min.css"
+      })
     )
     .pipe(sourcemaps.write())
     .pipe(dest(path.build.css))
