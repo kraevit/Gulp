@@ -16,7 +16,7 @@ const webpcss       = require("gulp-webp-css");         // auto insert webp in c
 const svgSrite      = require("gulp-svg-sprite");       // svg sprites
 const ttf2woff      = require("gulp-ttf2woff");         // fonts
 const ttf2woff2     = require("gulp-ttf2woff2");        // fonts
-const fonter        = require("gulp=fonter");           // fonts
+const fonter        = require("gulp-fonter");           // fonts
 
 let source_folder   = "source"; // source folder
 let build_folder    = "build";   // build folder
